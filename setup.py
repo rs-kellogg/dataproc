@@ -25,15 +25,13 @@ setup(
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     description="Data processing utilities",
     entry_points={
         'console_scripts': [
-            'dataproc=dataproc.cli:main',
+            'krsutils=dataproc.cli:app',
         ],
     },
     install_requires=requirements,

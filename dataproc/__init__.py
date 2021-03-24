@@ -3,3 +3,5 @@
 __author__ = """Will Thompson"""
 __email__ = 'wkt@northwestern.edu'
 __version__ = '0.1.0'
+
+from dataproc import dataproc

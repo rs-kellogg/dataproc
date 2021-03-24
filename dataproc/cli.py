@@ -2,7 +2,7 @@
 import typer
 from pathlib import Path
 from typing import Optional
-from dataproc import *
+from dataproc.dataproc import unzip_files
 
 
 app = typer.Typer()
@@ -19,5 +19,5 @@ def unzip(
         help="The directory where the output flat files will be created. Defaults to the current working directory",
     ),
 ) -> None:
-    unzip(in_dir, out_dir)
+    unzip_files(in_dir, out_dir)
 
